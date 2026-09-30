@@ -1,0 +1,18 @@
+{
+  "name": "mixed-node-fixture",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22 <25"
+  },
+  "scripts": {
+    "test": "node --test tests/node.test.js",
+    "lint": "node --check src/math.js",
+    "typecheck": "tsc --noEmit -p apps/widget/tsconfig.json",
+    "build": "node scripts/build.mjs"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
+}
